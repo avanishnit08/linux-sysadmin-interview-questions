@@ -57,10 +57,29 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 
 * What is the name and the UID of the administrator user?
 * How to list all files, including hidden ones, in a directory?
+  Ans: ls -a
 * What is the Unix/Linux command to remove a directory and its contents?
+  Ans: rm -rf directory_name
 * Which command will show you free/used memory? Does free memory exist on Linux?
+  Ans: free -h
+  The free -h command output includes:
+total: Total installed memory.
+used: Memory in use by the system.
+free: Memory not being used at all.
+shared: Memory used by tmpfs.
+buffers: Memory used by kernel buffers.
+cache: Memory used by the page cache and slabs.
+available: Estimation of memory available for starting new applications without swapping.
 * How to search for the string "my konfu is the best" in files of a directory recursively?
+  Ans: grep -r "my konfu is the best" /path/to/directory
+       Using grep
+       The grep command is commonly used for searching text within files. To search recursively, you can use the -r option.
 * How to connect to a remote server or what is SSH?
+  Ans: What is SSH?
+       SSH, or Secure Shell, is a cryptographic network protocol for operating network services securely over an unsecured network. The most common application of SSH is for remote login to computer systems by 
+       users.
+       How to connect to a remote server using SSH?
+       ssh username@hostname_or_ip_address
 * How to get all environment variables and how can you use them?
 * I get "command not found" when I run ```ifconfig -a```. What can be wrong?
 * What happens if I type TAB-TAB?
